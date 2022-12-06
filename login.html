@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KidMania</title>
+    <meta name="description" content="Service via kids">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon3.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/jquery-3.6.1.js" async defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header--wrapper">
+            <div class="center"><a href="index.html" alt=""><img src="img/kidmania.svg"></a></div>
+            <div class="end" >
+                <a href="login.html">Вход</a>
+            </div>
+        </div>
+    </header>
+        <main class="intro">
+            <div class="login--wrapper">
+                <form action="login.php" method="post" >
+                    <p>Вход</p>
+                    <input type="text" required placeholder="Логин, Почта, Номер" id="f-name" name="f-name">
+                    <input type="password" required placeholder="Пароль" id="password" name="password">
+                    <a href="#" id="fg" onclick="forgot()">forgot password?</a>
+                    <input class='submit'type="submit"value='Подтвердить'>
+                    <p>New to us? <a href="registration.html">SIGN IN</a></p>
+            </form>
+            </div>
+        </main>
+
+
+        <script src="scripts/forgot.js" async defer></script>
+    </body>
+</html>

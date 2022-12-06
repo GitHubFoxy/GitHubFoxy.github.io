@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KidMania</title>
+    <meta name="description" content="Service via kids">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon3.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts/jquery-3.6.1.js" async defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header--wrapper">
+            <div class="center"><a href="index.html" alt=""><img src="img/kidmania.svg"></a></div>
+            <div class="end" >
+                <a href="login.html">Вход</a>
+            </div>
+        </div>
+    </header>
+        <main class="intro">
+            <div class="login--wrapper" style="margin-top:35px ;">
+                <form action="reg.php" method="post" >
+                    <p>Регистрация пользователя<br><a href="nyanyaregistrationform.html" id="wbn">Стать няней?</a></p>
+                    <input type="text" required placeholder="Логин" name="login">
+                    <input type="text" required placeholder="Имя" name="f_name">
+                    <input type="text" required placeholder="Фамилия" name="L_name">
+                    <div class="middlename">
+                        <input type="checkbox" checked id="chkbmn" onchange="is_m_name()">
+                        <input type="text" required id="mdlnm" placeholder="Отчество" name="m_name"> 
+                    </div>
+                    <input type="password" required placeholder="Пароль" name="password">
+                    <input type="email" name="email" id="" placeholder="Почта">
+                    <input type="text" placeholder="Номер телефона" name="number" number oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"  maxlength="11">
+                    <input class='submit'type="submit"value='Подтвердить'>
+            </form>
+            </div>
+        </main>
+        <script src="scripts/script.js" async></script>
+    </body>
+</html>
