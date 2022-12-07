@@ -6,3 +6,11 @@ function is_m_name() {
         document.getElementById('mdlnm').disabled = true;
     }
 }
+
+let faqs = document.querySelectorAll(".faq--block");
+let arror = document.querySelectorAll("arrdown");
+faqs.forEach((faq) => {
+    faq.addEventListener("click",() => {
+        faq.classList.toggle('active');
+    })
+})
